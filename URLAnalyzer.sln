@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "URLAnalyzer", "URLAnalyzer.vcxproj", "{4246E2C3-86CD-4507-8185-64D432E9FAE5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4246E2C3-86CD-4507-8185-64D432E9FAE5}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4246E2C3-86CD-4507-8185-64D432E9FAE5}.Debug|Win32.Build.0 = Debug|Win32
+		{4246E2C3-86CD-4507-8185-64D432E9FAE5}.Release|Win32.ActiveCfg = Release|Win32
+		{4246E2C3-86CD-4507-8185-64D432E9FAE5}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
