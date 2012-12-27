@@ -1,12 +1,25 @@
 #include "file.h"
 
-void EraseBlankPrefix(std::string &str)
+void EraseBlank(std::string &str)
 {
 	for(; str.size() > 0; )
 	{
 		if (str[0] == '\t' || str[0] == ' ' || str[0] == '\r' || str[0] == '\n')
 		{
 			str.erase(str.begin());
+		}
+		else
+		{
+			break;
+		}
+	}
+	size_t lastindex;
+	for (; str.size() > 0; )
+	{
+		lastindex = str.size() - 1;
+		if (str[lastindex] == '\t' || str[lastindex] == ' ' || str[lastindex] == '\r' || str[lastindex] == '\n')
+		{
+			str.erase(str.begin() + str.size() - 1);
 		}
 		else
 		{
@@ -71,7 +84,7 @@ void LogSignature(std::vector<std::string> urls, std::vector<EDGE> &edges)
 				{
 					c[k - j] = (*i)[k];
 				}
-				oneEDGE.Sig = *(uint*)c;
+				oneEDGE.Sig = *(size_t*)c;
 				edges.push_back(oneEDGE);
 			}
 		}
@@ -84,7 +97,7 @@ void ReadURLs(const std::string strText, std::vector<std::string> &urls)
 
 	for (std::vector<std::string>::iterator i = urls.begin(); i != urls.end(); ++i)
 	{
-		EraseBlankPrefix(*i);
+		EraseBlank(*i);
 	}
 }
 

@@ -6,7 +6,7 @@
 #define SIGNATURE uint
 #endif
 
-#ifndef SNORTID
+#ifndef URLID
 #define URLID uint
 #endif
 
@@ -42,7 +42,7 @@ struct STRSPLRECV
 	}
 };
 
-void EraseBlankPrefix(std::string &str);
+void EraseBlank(std::string &str);
 
 struct EDGE
 {
